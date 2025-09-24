@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moniruzzaman | Professional Portfolio</title>
+  <meta name="description" content="Moniruzzaman's professional portfolio. Python & Web Developer. Modern, responsive, and accessible.">
+  <meta name="keywords" content="Portfolio, Python, Web Developer, SQL, Projects, Moniruzzaman">
+  <meta name="author" content="Moniruzzaman">
+  <meta property="og:title" content="Moniruzzaman | Professional Portfolio">
+  <meta property="og:description" content="Python & Web Developer crafting modern digital experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/profile.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="starfield" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;"></canvas>
+  <header>
+    <div class="logo" aria-label="Moniruzzaman Portfolio">Moniruzzaman</div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="darkToggle" aria-label="Toggle dark mode">
+      🌙
+    </button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-text" data-aos="fade-right">
+        <h1>Hello, I’m <span>MD. MONIRUZZAMAN HRIDOY</span></h1>
+        <p>A Python & Web Developer crafting modern digital experiences.</p>
+        <a href="#projects" class="btn" aria-label="View My Work">View My Work</a>
+      </div>
+      <div class="hero-img" data-aos="fade-left">
+  <img src="images/IMG_20230705_205744_728.jpg" alt="Profile Photo" loading="lazy">
+      </div>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate developer with expertise in Python, SQL, and web development.<br>
+        I enjoy building scalable backend systems and modern responsive websites.<br>
+        My goal is to combine creativity with logic to craft impactful digital solutions.
+      </p>
+    </section>
+
+    <section id="experience" class="experience" data-aos="fade-up">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Web Developer Intern</h3>
+          <span>2024 – Present</span>
+          <p>Developed modern websites using HTML, CSS, JS, and backend APIs.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Python Projects</h3>
+          <span>2023 – Present</span>
+          <p>Built automation scripts, data tools, and backend applications with Python & SQL.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" data-aos="zoom-in">
+          <h3>Portfolio Website</h3>
+          <p>A modern responsive portfolio built with HTML, CSS, and JS.</p>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <h3>Python Automation</h3>
+          <p>Scripts for data processing and workflow automation using Python.</p>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+          <h3>SQL Database App</h3>
+          <p>Designed and optimized SQL databases for web applications.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Let’s work together! Reach me via:</p>
+      <form id="contactForm" class="contact-form" autocomplete="off" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required aria-required="true" placeholder="Your Name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required aria-required="true" placeholder="Email">
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-required="true" placeholder="Message"></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn" id="sendBtn" type="submit">Send Message</button>
+          <button class="btn ghost" id="clearBtn" type="button">Clear</button>
+        </div>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+      <div class="contact-links">
+        <p>
+          <a href="mailto:hridoy888121@gmail.com" aria-label="Send Email" style="display:inline-flex;align-items:center;gap:6px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8.99l8 6.99 8-6.99V18z"/></svg>
+            hridoy888121@gmail.com
+          </a>
+        </p>
+        <p>
+          <a href="https://github.com/Hridoy4946" target="_blank" rel="noopener" aria-label="GitHub Profile" style="display:inline-flex;align-items:center;gap:6px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.012c0 4.418 2.865 8.167 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.833.091-.646.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.099 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .268.18.579.688.481C19.138 20.175 22 16.426 22 12.012 22 6.484 17.523 2 12 2z"/></svg>
+            github.com/Hridoy4946
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/hridoy11" target="_blank" rel="noopener" aria-label="LinkedIn Profile" style="display:inline-flex;align-items:center;gap:6px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.868 0-2.156 1.459-2.156 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.838-1.563 3.036 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+            www.linkedin.com/in/hridoy11
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hridoy. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Twinkling starfield background
+    const canvas = document.getElementById('starfield');
+    const ctx = canvas.getContext('2d');
+    let stars = [];
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function createStars(num) {
+      stars = [];
+      for (let i = 0; i < num; i++) {
+        stars.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          r: Math.random() * 1.2 + 0.3,
+          twinkle: Math.random() * Math.PI * 2,
+          speed: Math.random() * 0.5 + 0.2
+        });
+      }
+    }
+    createStars(120);
+
+    window.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function drawStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let star of stars) {
+        // Twinkle effect
+        star.twinkle += star.speed * 0.03;
+        let alpha = 0.7 + 0.3 * Math.sin(star.twinkle);
+        // Move stars slightly with mouse
+        let dx = (star.x - mouseX) * 0.002;
+        let dy = (star.y - mouseY) * 0.002;
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.beginPath();
+        ctx.arc(star.x - dx, star.y - dy, star.r, 0, Math.PI * 2);
+        ctx.fillStyle = '#fff';
+        ctx.shadowColor = '#fff';
+        ctx.shadowBlur = 8;
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    function animate() {
+      drawStars();
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
+</body>
+</html>
