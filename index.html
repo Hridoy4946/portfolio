@@ -5,14 +5,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moniruzzaman | Professional Portfolio</title>
-  <meta name="description" content="Moniruzzaman's professional portfolio. Python & Web Developer. Modern, responsive, and accessible.">
-  <meta name="keywords" content="Portfolio, Python, Web Developer, SQL, Projects, Moniruzzaman">
+  <title>Md. Moniruzzaman Hridoy </title>
+  <meta name="description" content="Full-Stack Developer specializing in Node.js, Express, React, Next.js, and PostgreSQL. Building web applications and healthcare systems.">
+  <meta name="keywords" content="Portfolio, Full-Stack Developer, Node.js, Express, TypeScript, React, Next.js, PostgreSQL, Backend Engineer, Moniruzzaman">
   <meta name="author" content="Moniruzzaman">
-  <meta property="og:title" content="Moniruzzaman | Professional Portfolio">
-  <meta property="og:description" content="Python & Web Developer crafting modern digital experiences.">
+  <meta property="og:title" content="Moniruzzaman | Full-Stack Backend Developer">
+  <meta property="og:description" content="Full-Stack Developer building production systems with Node.js, Express, React, and PostgreSQL. Creating healthcare and web applications.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/profile.jpg">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +23,7 @@
 <body>
   <canvas id="starfield" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;pointer-events:none;"></canvas>
   <header>
-    <div class="logo" aria-label="Moniruzzaman Portfolio">Moniruzzaman</div>
+    <a href="#hero" class="logo" aria-label="Moniruzzaman Portfolio - Home">Moniruzzaman</a>
     <nav aria-label="Main Navigation">
       <ul>
         <li><a href="#hero">Home</a></li>
@@ -40,8 +41,8 @@
   <main>
     <section id="hero" class="hero">
       <div class="hero-text" data-aos="fade-right">
-        <h1>Hello, I’m <span>MD. MONIRUZZAMAN HRIDOY</span></h1>
-        <p>A Python & Web Developer crafting modern digital experiences.</p>
+        <h1>Md. Moniruzzaman Hridoy</h1>
+        <p><span style="color: var(--primary);">Full-Stack Developer</span> building web apps with Node.js, Express, JavaScript, React, and PostgreSQL. Let's code something interesting today.</p>
         <a href="#projects" class="btn" aria-label="View My Work">View My Work</a>
       </div>
       <div class="hero-img" data-aos="fade-left">
@@ -52,9 +53,9 @@
     <section id="about" class="about" data-aos="fade-up">
       <h2>About Me</h2>
       <p>
-        I’m a passionate developer with expertise in Python, SQL, and web development.<br>
-        I enjoy building scalable backend systems and modern responsive websites.<br>
-        My goal is to combine creativity with logic to craft impactful digital solutions.
+        I'm a full-stack developer who enjoys building real applications that solve problems. I work with Node.js and React to create backends and frontends that actually work.<br>
+      like clean code, databases that don't break, and systems that scale. I've learned through building projects like AidSphere and solving real problems along the way.
+        Always learning and growing as a developer. <br>
       </p>
     </section>
 
@@ -62,32 +63,80 @@
       <h2>Experience</h2>
       <div class="timeline">
         <div class="timeline-item">
-          <h3>Web Developer Intern</h3>
+          <h3>Full-Stack Developer</h3>
           <span>2024 – Present</span>
-          <p>Developed modern websites using HTML, CSS, JS, and backend APIs.</p>
+          <p>Built AidSphere, a full MERN application with Node.js/Express backend, PostgreSQL database, and React frontend. Worked with real-time integrations and healthcare compliance standards.</p>
         </div>
         <div class="timeline-item">
-          <h3>Python Projects</h3>
+          <h3>Backend & Data Systems</h3>
           <span>2023 – Present</span>
-          <p>Built automation scripts, data tools, and backend applications with Python & SQL.</p>
+          <p>Designed and optimized PostgreSQL/MongoDB databases, built REST APIs, automated workflows, and worked with healthcare compliance standards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills" data-aos="fade-up">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Backend & APIs</h3>
+          <p>Node.js, Express.js, JavaScript, REST APIs, Webhooks, Prisma ORM</p>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend & Frameworks</h3>
+          <p>React, Next.js, HTML5, CSS3, Responsive Design</p>
+        </div>
+        <div class="skill-category">
+          <h3>Databases & Tools</h3>
+          <p>PostgreSQL, MongoDB, SQL, Git, GitHub, VS Code</p>
+        </div>
+        <div class="skill-category">
+          <h3>Specializations</h3>
+          <p>ML/NLP Experience, Medical Data Compliance, System Architecture, Full-Stack MERN</p>
         </div>
       </div>
     </section>
 
     <section id="projects" class="projects" data-aos="fade-up">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="project-grid">
-        <div class="project-card" data-aos="zoom-in">
-          <h3>Portfolio Website</h3>
-          <p>A modern responsive portfolio built with HTML, CSS, and JS.</p>
+        <div class="project-card featured" data-aos="zoom-in">
+          <div class="project-badge">🔥 FEATURED</div>
+          <h3>🏥 AidSphere - Health Platform</h3>
+          <p>Full-stack MERN application featuring symptom tracking dashboard, specialist matching, and secure medical vault with real-time updates.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Real-time APIs</span>
+          </div>
+          <div class="project-links">
+            <a href="https://aidsphere-nine.vercel.app/" target="_blank" class="btn" style="font-size: 0.9rem; padding: 8px 16px;">Live Demo</a>
+            <a href="https://github.com/Hridoy4946/AdSphere" target="_blank" class="btn" style="font-size: 0.9rem; padding: 8px 16px;">GitHub</a>
+          </div>
         </div>
         <div class="project-card" data-aos="zoom-in">
-          <h3>Python Automation</h3>
-          <p>Scripts for data processing and workflow automation using Python.</p>
+          <h3>Production Portfolio</h3>
+          <p>Modern responsive portfolio with dark/light theme toggle, smooth animations, and accessibility-first design.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Responsive</span>
+          </div>
+          <a href="https://github.com/Hridoy4946/portfolio" target="_blank" class="btn" style="font-size: 0.9rem; padding: 8px 16px; margin-top: 10px;">GitHub</a>
         </div>
         <div class="project-card" data-aos="zoom-in">
-          <h3>SQL Database App</h3>
-          <p>Designed and optimized SQL databases for web applications.</p>
+          <h3>Backend & Database Systems</h3>
+          <p>REST API development, PostgreSQL/MongoDB optimization, healthcare compliance, and data pipeline architecture.</p>
+          <div class="tech-stack">
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">REST APIs</span>
+          </div>
         </div>
       </div>
     </section>
